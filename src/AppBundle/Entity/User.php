@@ -29,11 +29,23 @@ class User implements UserInterface
     private $email;
 
     /**
+     * The encoded password
+     *
      * @ORM\Column(type="string")
      */
     private $password;
 
+    /**
+     * A non-persisted field that's used to create the encoded password.
+     *
+     * @var string
+     */
     private $plainPassword;
+
+    /**
+     * @ORM\Column(type="json_array")
+     */
+    private $roles = [];
 
     public function getUsername()
     {
@@ -42,7 +54,12 @@ class User implements UserInterface
 
     public function getRoles()
     {
-        return ['ROLE_USER'];
+        $roles = $this->roles;
+        if (!in_array('ROLE_USER', $roles)) {
+            $roles[] = 'ROLE_USER';
+        }
+
+        return $roles;
     }
 
     public function getPassword()
@@ -82,4 +99,10 @@ class User implements UserInterface
         // will be called and know the password has changed too
         $this->password = null;
     }
+
+    public function setRoles($roles)
+    {
+        $this->roles = $roles;
+    }
+
 }
