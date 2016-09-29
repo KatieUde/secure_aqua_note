@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="967d96b3-b8cb-4cf0-bcd1-ed35ca005731" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/main/homepage.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/main/homepage.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/Admin/GenusAdminController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/Admin/GenusAdminController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
     </list>
     <ignored path="aqua_note+FORMS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,8 +70,8 @@
       <file leaf-file-name="security.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/config/security.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="39" />
+            <state relative-caret-position="168">
+              <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -135,8 +131,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="690" />
-    <option name="y" value="601" />
+    <option name="x" value="867" />
+    <option name="y" value="561" />
     <option name="width" value="1508" />
     <option name="height" value="899" />
   </component>
@@ -475,15 +471,15 @@
       <workItem from="1474985526653" duration="2369000" />
       <workItem from="1474992477784" duration="43000" />
       <workItem from="1475014789273" duration="2011000" />
-      <workItem from="1475158112445" duration="1293000" />
+      <workItem from="1475158112445" duration="2103000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31226000" />
+    <option name="totallyTimeSpent" value="32036000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="690" y="601" width="1508" height="899" extended-state="0" />
+    <frame x="867" y="561" width="1508" height="899" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20736699" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -908,8 +904,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="39" />
+        <state relative-caret-position="168">
+          <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
           <folding />
         </state>
       </provider>
