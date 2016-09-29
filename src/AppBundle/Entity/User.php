@@ -2,9 +2,11 @@
 
 namespace AppBundle\Entity;
 
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\Role\Role;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 // If using FOSUserBundle, it gives one a User Entity for saving users in the database (created manually here)
 // FOSUserBundle also gives one a bunch of routes & controllers for things like login forms, registration, and
@@ -13,6 +15,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\Entity
  * @ORM\Table(name="user")
+ * @UniqueEntity(fields={"email"}, message="It looks like you already have an account!")
  */
 class User implements UserInterface
 {
@@ -24,6 +27,8 @@ class User implements UserInterface
     private $id;
 
     /**
+     * @Assert\NotBlank()
+     * @Assert\Email()
      * @ORM\Column(type="string", unique=true)
      */
     private $email;
@@ -38,7 +43,7 @@ class User implements UserInterface
     /**
      * A non-persisted field that's used to create the encoded password.
      *
-     * @var string
+     * @Assert\NotBlank()
      */
     private $plainPassword;
 
